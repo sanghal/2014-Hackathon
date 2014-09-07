@@ -1,0 +1,4 @@
+quantitative: can take average
+categorical: can't take average
+
+ordinal: categorical variable with a clear ordering (sorted)
