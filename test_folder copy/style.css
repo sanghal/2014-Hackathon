@@ -1,0 +1,88 @@
+#index_page {
+	/*
+  	background: url(house_large.png) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	*/
+}
+
+.subject_header {
+	color: red;
+}
+
+.top_bar {
+	position: 		fixed;
+	border-width: 	2px;
+	height:			34px;
+	width: 			100%;
+}
+
+#header {
+	padding-top:34px;
+	z-index:0;
+}
+
+.nav_list {
+	position: relative;
+	background-color: none;
+	list-style-type: none;
+	margin: 0;
+	margin-top: -.35em;
+	padding: 0;
+	text-align: left;
+	font-size: 1.5em;
+	z-index: 11;
+}
+
+.nav_list li {
+	display: inline;
+	vertical-align: center;
+	/*
+	padding-right: .1em;
+	*/
+}
+
+/*
+.nav_list li:after {
+	content: "|";
+	color: white;
+}
+*/
+
+.nav_list li a {
+	text-decoration: none;
+	color: #fff;
+	background-color: #036;
+	padding-left: .5em;
+	padding-right: .5em;
+}
+
+.nav_list li a:hover
+{
+	background-color: #369;
+}
+
+.login_box {
+	position: relative;
+	background-color: #99CCFF;
+	padding: .1em;
+	padding-right: 5em;
+	border-radius: .2em;
+	vertical-align: center;
+	left: 0px;
+	display: inline;
+	font-size: .95em; 
+	float: right;
+}
+
+.nav_list div *{
+	display: inline;
+}
+
+#logo img{
+	vertical-align: middle;
+	width: 1.5%;
+	height: auto;
+}
