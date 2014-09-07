@@ -1,0 +1,145 @@
+<script type="text/template" id="dashboard_tpl">
+
+                    <div class="container">
+
+                      <form class="form-signin" role="form">
+                        <h2 class="form-signin-heading">Please sign in</h2>
+                            <input type="text" name="username" class="form-control" value="" placeholder="Username or Email">
+                            <input type="password" name="password" class="form-control" value="" placeholder="Password">
+                            <input type="button" name="commit" id = "login" value="Login">
+                            <input type="button" name="register" id = "newregister" value="Register">
+                        </form>
+                  
+
+                    </div> <!-- /container -->
+
+    
+</script>
+
+<script type="text/template" id="header_tpl">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="nav-wrapper">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a tabindex=2 id="payment" href="#payment">Payment</a> </li>
+            <li><a tabindex=2 id="houses" href="#houses">Houses</a> </li>
+            <li><a tabindex=2 id="logout" href="#dashboard">Login</a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</div>
+</script>
+
+<script type="text/template" id="application_tpl">
+<nav id="header" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+</nav>
+<div id="body">
+<div class="alert alert-danger" role="alert">You have overdue payment!</div>
+            
+<div class= "container">
+    <h2>Upcoming Due</h2>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Due Date</th>
+                <th>Amount</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>9/23/2014</td>
+                <td>434.33</td>
+                <td><button type="button" class="btn btn-primary">View Details</button></td>
+                <td><button type="button" class="btn btn-success">Pay Now</button></td> 
+            </tr>
+            <tr>
+                <td>9/28/2014</td>
+                <td>19.23</td>
+                <td><button type="button" class="btn btn-primary">View Details</button></td>
+                <td><button type="button" class="btn btn-success">Pay Now</button></td>
+            </tr>
+            <tr>
+                <td>10/3/2014</td>
+                <td>500.00</td>           
+                <td><button type="button" class="btn btn-primary">View Details</button></td>
+                <td><button type="button" class="btn btn-success">Pay Now</button></td>
+            </tr>
+
+        </tbody>
+    </table>
+
+
+</div>
+
+<div class= "container">
+    <h2>Overdue payment</h2>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Due Date</th>
+                <th>Amount</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>8/23/2014</td>
+                <td>44.00</td>
+                <td><button type="button" class="btn btn-primary">View Details</button></td>
+                <td><button type="button" class="btn btn-success">Pay Now</button></td> 
+            </tr>
+            <tr>
+                <td>8/28/2014</td>
+                <td>190.23</td>
+                <td><button type="button" class="btn btn-primary">View Details</button></td>
+                <td><button type="button" class="btn btn-success">Pay Now</button></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+    </div>
+
+
+</div>
+
+</script>
+<script type="text/template" id="houses_tpl">
+<p>Houses</p>
+</script>
+<script type="text/template" id="payment_tpl">
+<p>payment</p>
+</script>
+
+<script type="text/template" id="register_tpl">
+<div id="body">
+<div class="container">
+ <form role="form" id="login-form" action="">
+    <div class="form-group">
+        <label for="param-username">Username</label>
+        <input type="text" class="form-control" id="param-username" placeholder="Enter username" autofocus>
+    </div>
+    <div class="form-group">
+        <label for="param-password">Password</label>
+        <input type="password" class="form-control" id="param-password" placeholder="Password">
+    </div>
+    <div class="form-group">
+        <label for="param-password">Password Confirmation</label>
+        <input type="password" class="form-control" id="param-password" placeholder="Password">
+    </div>
+    <button type="button" class="btn btn-success">Submit</button>
+    
+</form>
+</div>
+</div>
+</script>
+

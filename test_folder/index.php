@@ -1,88 +1,56 @@
-<!DOCTYPE html>
-<html id="index_page">
-	<head>
-    	<link type='text/css' rel='stylesheet' href='style.css'/>
-    	<title>HouseManager</title>
-  	</head>
-  	<body>
-  		<div class="top_bar">
-  			<ul class="nav_list">
-  				<li id="logo">
-  					<a href="index.php"><img src="house_large.png"></a>
-  				</li>
-  			<?php
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+    <link href="webincludes/css/bootstrap.css" rel="stylesheet">
+    <!--<link href="webincludes/css/style.css" rel="stylesheet">-->
+    <link href="webincludes/css/style.css" rel="stylesheet" type="text/css">
+    <div id="main">
+    </div>
+    
+    <?php
+    include_once('app/templates/global-template.html');
+    ?>
 
-  				// Create a dictionary with all link text
-  				// and the href they go to
-  				$menu_options = [
-  					"bio" => "bio_link",
-  					"guitars" => "guitars_link",
-  					"anna" => "anna_link",
-  					"login" => "login_page.php"
-  				];
+    <script>
+        var slingo = window.slingo = {
+            DEBUG_MODE: true
+        };
+        window.less = {
+            logLevel: 0
+        }
 
-  				// Make the list items
-  				foreach($menu_options as $key => $value) {
-  					echo "<li><a href=" . $value . ">" . $key . "</a></li>";
-  				}
-  			?>
+    </script>
 
-  				<div class="login_box">
-		  			<li>login:</li>
-		  			<li>
-			  			<form method="post" action="logged_in.php">
-		  					<input type="text" name="username" value="" placeholder="Username or Email">
-		  					<input type="password" name="password" value="" placeholder="Password">
-		  					<input type="submit" name="commit" value="Login">
-			  			</form>
-			  			<form method="post" action="register.php">
-			  				<input type="submit" name="register" value="Register">
-			  			</form>
-			  		</li>
-
-			  	</div>
-
-  			</ul>
-  		</div>
-  		<div id="header"></div>
+   <script type="text/javascript" src="webincludes/js/jquery.js"></script>
+    <script type="text/javascript" src="webincludes/js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="webincludes/js/underscore.js"></script>
+    <script type="text/javascript" src="webincludes/js/lodash.js"></script>
+    <script type="text/javascript" src="webincludes/js/backbone.js"></script>
+	<script type="text/javascript" src="webincludes/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="webincludes/js/slingo.js"></script>
 
 
-		<h1 class="subject_header">Hello from tyler's web page</h1>
-		<?php
+    <script type="text/javascript" src="app/models/application.js"></script>
+    <script type="text/javascript" src="app/models/user.js"></script>
+    <script type="text/javascript" src="app/models/project.js"></script>
 
-			$myArray = array("I", "am", "a", "word");
+    <script type="text/javascript" src="app/collection/users.js"></script>
 
-			// I am a comment
-	    	function writeMessage($arrayIn) {
-	    		echo("\n");
-	        	foreach($arrayIn as $arrayItem) {
-	        	    echo $arrayItem . " ";
-	        	}
-	        }
+    <script type="text/javascript" src="app/views/header.js"></script>
+    <script type="text/javascript" src="app/views/dashboard.js"></script>
+    <script type="text/javascript" src="app/views/register.js"></script>
+    <script type="text/javascript" src="app/views/houses.js"></script>
+    <script type="text/javascript" src="app/views/payment.js"></script>
+    <script type="text/javascript" src="app/views/application.js"></script>
 
-	        function fillPage() {
-	        	for($i=0; $i<100; $i++) {
-	        		echo "<br>" . "hi";
-	        	}
-	        }
+    <script type="text/javascript" src="app/router.js"></script>
 
-	    	writeMessage($myArray);
-	    	fillPage();
-
-	    	// class test
-	    	class TestClass {
-	    		private $letter_array = array("a", "b", "c", "d");
-
-	    		function __construct() {}
-	    		public function print_letter_array() {
-	    			foreach($this->letter_array as $letter) {
-	    				echo $letter . " ";
-	    			}
-	    		}
-	    	}
-
-	    	$class_test = new TestClass();
-	    	$class_test->print_letter_array();
-		?>
-  </body>
+</body>
 </html>

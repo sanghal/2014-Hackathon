@@ -1,0 +1,75 @@
+body {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#header{
+    background: #ffffff;
+    border-color: #ffffff;
+    height: 80px;
+    border-bottom: 1px solid #dddfe4;
+    font-weight: 800;
+}
+
+#header > .container {
+    margin-top: 15px;
+}
+
+.nav > li {
+  padding: 10px; 
+  padding-left: 30; 
+}
+
+
+#header .nav a {
+    color: #5a6171;
+    -webkit-transition: color 0.5s;
+    -moz-transition:    color 0.5s;
+    -ms-transition:     color 0.5s;
+    -o-transition:      color 0.5s;
+    transition:         color 0.5s;
+}
+#header .nav a:hover {
+    color: #ff643b;
+}
+#header .nav li a {
+    background-color: #ffffff; 
+}
